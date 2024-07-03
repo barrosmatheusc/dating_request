@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1º Desafio</title>
+</head>
+<body>
+
+    <h1>Qual o nome da música?</h1>
+
+    <audio preload="auto" controls loop>
+        <source src="karaoke.mp3" type="audio/mp3">
+    </audio>
+
+    <input id="musica" type="text" placeholder="Qual o Nome da música?">
+
+    <button id="botão" onclick="validar(); return false">VALIDAR</button>
+
+</body>
+
+<script >
+    function validar(){
+        var musica =  document.getElementById('musica').value;
+
+
+        if (musica == 'razão da minha vida' || musica == 'razao da minha vida'){
+            alert("Parabéns, ta indo bem... vamos ver o próximo");
+            location.href = "../game/html/index.html";
+        }
+        else {
+            alert("humm, errou em...");
+        }
+
+    }
+
+</script>
+
+</html>

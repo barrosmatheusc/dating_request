@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    margin: 200px auto;
+    text-align: center;
+    display: block;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+main > form > input {
+    margin: 10px auto;
+}
+
+#dica {
+    margin: 0 20px;
+    font-size: 10px;
+    font-style: none;
+}
+
+#Senha {
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#photo {
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+}
+
+#botão-enviar {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: brown;
+}

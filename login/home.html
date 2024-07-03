@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-home.css">
+    <title>TELA DE LOGIN</title>
+</head>
+<body>
+
+
+    <main>
+        <form>
+            <h3>PERSONAGEM: Lara Veiga</h3>
+
+            <img id="photo" src="imagens/lara.png" alt="lara foto">
+            <br>
+            
+            <!-- input recebe senha, placeholde colocar nome de guia-->
+            <input type="password" placeholder="Senha" id="Senha">
+            
+            <abbr id="dica" title="uma data importante (DD/MM/AA)">dica</abbr>
+
+            <input id="botão-enviar" type="submit" onclick="logar(); return false">
+
+            <!--ON CLICK DEFINE A FUNÇÃO NO CLICK
+            RETORNA FALSO PARA VÁLIDAR O LOGIN (NÃO SEI PQ) -->
+
+        </form>
+    </main>
+
+<script>
+    // criando função para o o login
+    function logar(){ // função criada
+        var senha = document.getElementById('Senha').value; // seleciona o domunento e define ele pelo nome e id criando a variavel (var)
+
+        // criando o SE na função    
+        if(senha == "01/01/2024"){
+            alert("Parabéns, vamos para o próximo");
+            location.href = "../1desafio/desafio1.html";
+        } 
+        else {
+            alert('Tá de brincadeira que errou essa...');
+        }
+    }
+
+</script>
+
+</body>
+</html>
